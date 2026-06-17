@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AmazonClone
 
 Creating a front-end clone of Amazon using Vite involves building the user interface of the Amazon website using Vite, React components, HTML, CSS, and JavaScript. Here are the high-level steps you can follow to create a front-end clone of Amazon using Vite:
@@ -23,3 +24,7 @@ Creating a front-end clone of Amazon using Vite involves building the user inter
 10. Deploy your Amazon clone to a hosting provider such as Netlify or Vercel to make it accessible to the public.
 
 Note that creating a front-end clone of Amazon using Vite is still a challenging project that involves many components, so you may need to break down each step into smaller sub-steps and spend time debugging and troubleshooting as you go. You may also need to use third-party APIs or mock data to simulate the behavior of the Amazon website.
+=======
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/097owwkH)
+[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=24146904&assignment_repo_type=AssignmentRepo)
+>>>>>>> 46cb3f9f94c77b8ff246aff6fc41d724e8b1763f
