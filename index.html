@@ -1,13 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Amazon Clone</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armstrong Number Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Armstrong Number Checker</h2>
+        
+        <div class="input-group">
+            <input type="number" id="numInput" placeholder="Enter a number (e.g. 153)" min="0">
+        </div>
+        
+        <button onclick="checkArmstrongNumber()">Check Number</button>
+        
+        <div id="result"></div>
+    </div>
+
+    <script>
+        
+        function checkArmstrongNumber() {
+            const inputField = document.getElementById('numInput');
+            const resultDiv = document.getElementById('result');
+            
+            const numValue = inputField.value;
+
+            // Input Validation
+            if (numValue === "") {
+                resultDiv.innerHTML = "⚠️ Please enter a number first!";
+                resultDiv.className = "error";
+                return;
+            }
+
+            const number = parseInt(numValue);
+            const numStr = number.toString();
+            const numDigits = numStr.length;
+            let sum = 0;
+
+            // Armstrong calculation logic
+            for (let i = 0; i < numDigits; i++) {
+                const digit = parseInt(numStr[i]);
+                sum += Math.pow(digit, numDigits);
+            }
+
+            // Output Display Handling
+            if (sum === number) {
+                resultDiv.innerHTML = `✅ ${number} is an Armstrong number!`;
+                resultDiv.className = "success";
+            } else {
+                resultDiv.innerHTML = `❌ ${number} is NOT an Armstrong number.`;
+                resultDiv.className = "error";
+            }
+        }
+    </script>
+
+</body>
 </html>
